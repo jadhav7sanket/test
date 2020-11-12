@@ -1,6 +1,7 @@
 pipeline{
-  stage('Test'){
-    steps {
+  stages{
+    stage('Test'){
+      steps {
                 script {
                     def output = sh (
                         script: "java -version",
@@ -11,3 +12,4 @@ pipeline{
            }
         }
         }
+}
