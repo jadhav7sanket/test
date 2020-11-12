@@ -8,7 +8,7 @@ pipeline{
                         script: "java -version",
                         returnStdout: true
                     ).trim()
-                    
+                    assert 1==1
                 }
            }
         }
